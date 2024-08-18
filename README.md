@@ -76,15 +76,15 @@
 
 <center>
 
-![Image 1](Images/HomeUICar.png)
+![Image 1](Images/car_new.jpeg)
 
-![Image 2](Images/HomeUIBike.png)
+![Image 2](Images/bike_new.jpeg)
 
-![Image 3](Images/HomeUIBus.png)
+![Image 3](Images/bus_new.jpeg)
 
-![Image 4](Images/Settings.png)
+![Image 4](Images/settings_new.jpeg)
 
-![Image 5](Images/History.png)
+![Image 5](Images/history_new.jpeg)
 
 </center>
   

@@ -85,7 +85,7 @@
   
 ## AUTHOR 🖋
 
-* [Pubudu Perea]( https://github.com/Pamod45)
+* [Pubudu Perera]( https://github.com/Pamod45)
 
 ## Contributors 🏅
 

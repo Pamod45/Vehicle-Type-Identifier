@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Dark background */
+    padding-top: 25px;
+}
+
+.btn {
+    width: 80%;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #555; /* Medium grey */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #777; /* Light grey */
+}
+
+.btn:active {
+    background-color: #222; /* Dark grey */
+}
+
+.right-section {
+    background-color: #808080; /* Grey */
+    color: white;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    height: 100%;
+    gap: 20px;
+}
+
+.home-row.title {
+    font-size: 32px;              /* Font size */
+    font-weight: bold;           /* Bold text */
+    letter-spacing: 5px;         /* Letter spacing */
+    text-shadow: 
+        0 0 5px #ff0000,         /* Red glow effect */
+        0 0 10px #ff0000,        /* Stronger red glow effect */
+        0 0 15px #ff0000,        /* Even stronger red glow effect */
+        0 0 20px #ff0000;        /* Strongest red glow effect */
+    color: #fff;                 /* Text color (white) */
+    margin: auto;
+    margin-top: 25px;
+}
+.bottomMessage{
+    margin: auto;
+    margin-top: -20px;
+    font-size: 25px;
+    border: 4px solid #34e43a; 
+    padding: 10px;          
+    border-radius: 5px;   
+    margin-left: 150px;
+    margin-right: 150px; 
+    text-align: center; 
+    
+}
+.image-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-placeholder {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc; /* Placeholder color */
+    border: 2px solid #555;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; /* Space between buttons */
+}
+
+.action-btn {
+    width: 150px; /* Button width */
+    height: 50px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #333; /* Match left section background color */
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #555; /* Lighter version of the background color */
+}
+
+.action-btn:active {
+    background-color: #111; /* Darker version of the background color */
+}
+
+/* Settings Page Grid Styling */
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.settings-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-item .image-placeholder {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc; /* Placeholder color */
+    border: 2px solid #555;
+    margin-bottom: 10px;
+}
+
+.settings-item .button-row {
+    
+    width: 100%;
+    padding: 0 10px; /* Padding for equal spacing */
+}
+
+.settings-item .button-row .action-btn{
+    width: 200px;
+}
+
+.settings-item .button-row .upload-btn{
+    margin-left: 60px;
+}
+
+.settings-item .button-row .delete-btn{
+    margin-right: 60px;
+}
+
+.settings-item .text{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;      
+    text-shadow: 
+        0 0 5px #ff0000,         /* Red glow effect */
+        0 0 10px #ff0000,        /* Stronger red glow effect */
+        0 0 15px #ff0000,        /* Even stronger red glow effect */
+        0 0 20px #ff0000;        /* Strongest red glow effect */
+    color: #fff;  
+}
+
+
+
+/* CSS for the history table */
+#history-table {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the table horizontally */
+    border-radius: 20px; /* Rounded corners for the entire table */
+    overflow: hidden; /* Ensure content fits within rounded corners */
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#history-table th, #history-table td {
+    border: 1px solid black; /* Black border for every cell */
+    padding: 10px; /* Add padding inside cells */
+    text-align: center; /* Center align text */
+}
+
+#history-table th {
+    background-color: black; /* Black background for headers */
+    color: white; /* White font color for headers */
+}
+
+#history-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+#history-table tr:nth-child(odd) {
+    background-color: white; /* White background for odd rows */
+}
+
+#history-table td {
+    color: black; /* Black font color for cell data */
+}
+
+#bottomMessage{
+    background-color: #414141;
+}
+

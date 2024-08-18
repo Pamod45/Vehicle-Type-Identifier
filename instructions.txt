@@ -1,0 +1,7 @@
+Requirements
+
+Folder structure
+
+Commands
+
+Starting the server

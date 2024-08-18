@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <button class="btn" onclick="showPage('home')">Home</button>
+            <button class="btn" onclick="showPage('settings')">Settings</button>
+            <button class="btn" onclick="showPage('history')">History</button>
+        </div>
+        <div class="right-section">
+            <div id="home" class="page active">
+                <div class="home-grid">
+                    <div class="home-row title">
+                        Welcome to the Vehicle Type Identifier
+                    </div>
+                    <div class="home-row image-row">
+                        <div class="image-placeholder" id="image-placeholder-1"></div>
+                        <div class="image-placeholder" id="image-placeholder-2"></div>
+                    </div>
+                    <div class="home-row button-row">
+                        <button class="action-btn upload-btn" onclick="homeUploadImage()">Upload</button>
+                        <button class="action-btn delete-btn" onclick="homeDeleteImage()">Delete</button>
+                    </div>
+                    <div class="bottomMessage" id="bottomMessage">
+                        Please upload an image
+                    </div>
+                </div>
+            </div>
+            <div id="settings" class="page">
+                <div class="settings-grid">
+                    <div class="settings-item">
+                        <div class="text">Source Background Image</div>
+                        <div class="image-placeholder" id="settings-placeholder-4"></div>
+                        <div class="button-row">
+                            <button class="action-btn upload-btn" onclick="settingUploadImage('settings-placeholder-4')">Upload</button>
+                            <button class="action-btn delete-btn" onclick="settingDeleteImage('settings-placeholder-4')">Delete</button>
+                        </div>
+                    </div>
+                    <div class="settings-item">
+                        <div class="text">Source Car Image</div>
+                        <div class="image-placeholder" id="settings-placeholder-1"></div>
+                        <div class="button-row">
+                            <button class="action-btn upload-btn" onclick="settingUploadImage('settings-placeholder-1')">Upload</button>
+                            <button class="action-btn delete-btn" onclick="settingDeleteImage('settings-placeholder-1')">Delete</button>
+                        </div>
+                    </div>
+                    <div class="settings-item">
+                        <div class="text">Source Bike Image</div>
+                        <div class="image-placeholder" id="settings-placeholder-2"></div>
+                        <div class="button-row">
+                            <button class="action-btn upload-btn" onclick="settingUploadImage('settings-placeholder-2')">Upload</button>
+                            <button class="action-btn delete-btn" onclick="settingDeleteImage('settings-placeholder-2')">Delete</button>
+                        </div>
+                    </div>
+                    <div class="settings-item">
+                        <div class="text">Source Bus Image</div>
+                        <div class="image-placeholder" id="settings-placeholder-3"></div>
+                        <div class="button-row">
+                            <button class="action-btn upload-btn" onclick="settingUploadImage('settings-placeholder-3')">Upload</button>
+                            <button class="action-btn delete-btn" onclick="settingDeleteImage('settings-placeholder-3')">Delete</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="history" class="page">
+                <table id="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Vehicle Type</th>
+                            <th>car probability</th>
+                            <th>bike probability</th>
+                            <th>bus probability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <input type="file" id="file-input" accept="image/*" style="display: none;">
+    <input type="file" id="file-input-settings" accept="image/*" style="display: none;">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,7 +1,20 @@
 Requirements
+  Python 
 
 Folder structure
+  VehicleTypeIdentifier
+    settings
+    static
+    templates
+    uploads
+    server.py
+    requirements.txt
 
 Commands
+  python -m venv env
+  pip install -r requirements.txt
+  python server.py
 
-Starting the server
+Testing Images
+  Upload the setting images in order first
+  Upload images in the home page
